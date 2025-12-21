@@ -2,11 +2,13 @@
 #include <string>
 using namespace std;
 
+// Global variables
 int windows = 0;
 int macos = 0;
 int linux = 0;
 
 void addpoint(string os) {
+    // Function to add point to OS.
     if (os == "Linux")
     {
         linux++;
@@ -27,6 +29,7 @@ void addpoint(string os) {
 }
 
 int question(string question) {
+    // Question function. This will return 0 or 1.
     string answer;
     cout << question;
     cin >> answer;
@@ -44,7 +47,7 @@ int question(string question) {
 
 int main() {
     cout << "Hello and welcome to cPPdistro! Answer these questions with 'y' or 'n', we'll select a operating system for you." << endl;
-
+    // Question                                                     // Answer
     if (question("Do you do coding?: ") == 1)                       {addpoint("Linux"); addpoint("macOS");}
     if (question("Do you love breaking your system: ") == 1)        {addpoint("Linux");}
     if (question("Do you love using terminal: ") == 1)              {addpoint("Linux"); addpoint("macOS");}
