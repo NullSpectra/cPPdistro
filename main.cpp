@@ -45,80 +45,22 @@ int question(string question) {
 int main() {
     cout << "Hello and welcome to cPPdistro! Answer these questions with 'y' or 'n', we'll select a operating system for you." << endl;
 
-    if (question("Do you do coding?: ") == 1)
-    {
-        addpoint("Linux");
-        addpoint("macOS");
-    }
-
-    if (question("Do you love breaking your system: ") == 1)
-    {
-        addpoint("Linux");
-    }
-
-    if (question("Do you love using terminal: ") == 1)
-    {
-        addpoint("Linux");
-        addpoint("macOS");
-    }
-
-    if (question("Are you a gamer: ") == 1)
-    {
-        addpoint("Windows");
-    }
-
-    if (question("Is your system old: ") == 1)
-    {
-        addpoint("Linux");
-    }
-
-    if (question("Do you use Apple devices: ") == 1)
-    {
-        addpoint("macOS");
-    }
-
-    if (question("Do you love open-source: ") == 1)
-    {
-        addpoint("Linux");
-    }
-
-    if (question("Do you have privacy concerns: ") == 1)
-    {
-        addpoint("Linux");
-    }
-
-    if (question("Do you do video editing: ") == 1)
-    {
-        addpoint("macOS");
-    }
-
-    if (question("Is battery very important for you: ") == 1)
-    {
-        addpoint("macOS");
-    }
-
-    if (question("Do you love customization: ") == 1)
-    {
-        addpoint("Linux");
-    }
-
-    if (question("Do you fear viruses: ") == 1)
-    {
-        addpoint("Linux");
-        addpoint("macOS");
-    }
-
-    if (question("Do you use Microsoft Office: ") == 1)
-    {
-        addpoint("Windows");
-        addpoint("macOS");
-    }
-
-    if (question("Do you make apps for Apple devices: ") == 1)
-    {
-        addpoint("macOS");
-    }
+    if (question("Do you do coding?: ") == 1)                       {addpoint("Linux"); addpoint("macOS");}
+    if (question("Do you love breaking your system: ") == 1)        {addpoint("Linux");}
+    if (question("Do you love using terminal: ") == 1)              {addpoint("Linux"); addpoint("macOS");}
+    if (question("Are you a gamer: ") == 1)                         {addpoint("Windows");}
+    if (question("Is your system old: ") == 1)                      {addpoint("Linux");}
+    if (question("Do you use Apple devices: ") == 1)                {addpoint("macOS");}
+    if (question("Do you love open-source: ") == 1)                 {addpoint("Linux");}
+    if (question("Do you have privacy concerns: ") == 1)            {addpoint("Linux");}
+    if (question("Do you do video editing: ") == 1)                 {addpoint("macOS");}
+    if (question("Is battery very important for you: ") == 1)       {addpoint("macOS");}
+    if (question("Do you love customization: ") == 1)               {addpoint("Linux");}
+    if (question("Do you fear viruses: ") == 1)                     {addpoint("Linux"); addpoint("macOS");}
+    if (question("Do you use Microsoft Office: ") == 1)             {addpoint("Windows"); addpoint("macOS");}
+    if (question("Do you make apps for Apple devices: ") == 1)      {addpoint("macOS");}
     
+
 
     cout << "\nLinux: " << linux << "\nmacOS: " << macos << "\nWindows: " << windows << endl;
 
