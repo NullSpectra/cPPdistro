@@ -34,7 +34,7 @@ int question(string question) {
     cout << question;
     cin >> answer;
 
-    if (answer=="y")
+    if (answer=="y" || answer=="Y" || answer=="yes" || answer=="YES")
     {
         return 1;
     }
